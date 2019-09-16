@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import Button from '@material-ui/core/Button';
-import navImage from './assets/images/1500x500.jpeg'
+import navImage from './assets/images/1500x500.jpeg';
 import twitterImage from './assets/images/twitter.jpg'
+import WeatherCard from './material-ui/WeatherCard'
+import Weather from './components/weather'
 
 class Home extends Component {
     render() {
@@ -20,6 +22,7 @@ class Home extends Component {
         return (
             <div className="container">
                 <div style={navImageStyle}>
+                    <Weather/>
                     <img style={imageStyle} src={navImage} alt=""/>
                     <div style={{position: 'absolute', textAlign: 'left'}}>
                         <img style={twitterStyle} src={twitterImage} alt=""/>
